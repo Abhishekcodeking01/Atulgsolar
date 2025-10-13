@@ -1,26 +1,16 @@
 export function StatsStrip() {
   return (
     <div className="bg-[color:var(--brand-green-50)] text-foreground">
-      <div className="mx-auto max-w-6xl px-4 py-8">
-        <div className="grid gap-6 sm:grid-cols-2">
-          <div className="rounded-lg border p-6 bg-white shadow-sm">
-            <div className="text-base text-muted-foreground mb-2">Government Subsidy</div>
-            <div className="text-3xl md:text-4xl font-bold text-[color:var(--brand-green-600)]">
-              ₹78,000 <span className="text-xl font-normal text-muted-foreground">per kW</span>
-            </div>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Avail central government subsidy with registered vendor support
-            </p>
-          </div>
-          <div className="rounded-lg border p-6 bg-white shadow-sm">
-            <div className="text-base text-muted-foreground mb-2">Loan Availability</div>
-            <div className="text-3xl md:text-4xl font-bold text-[color:var(--brand-orange-600)]">
-              100% <span className="text-xl font-normal text-muted-foreground">Loan</span>
-            </div>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Complete financing available. Example: 2kW system ≈ ₹2,000/month
-            </p>
-          </div>
+      <div className="mx-auto max-w-6xl px-4 py-6 grid gap-4 sm:grid-cols-2">
+        <div className="rounded-md border p-4 bg-white">
+          <div className="text-sm text-muted-foreground">Government Subsidy</div>
+          <div className="text-xl font-semibold">₹78,000 per kW</div>
+          <p className="text-xs text-muted-foreground mt-1">As communicated; subject to policy/eligibility.</p>
+        </div>
+        <div className="rounded-md border p-4 bg-white">
+          <div className="text-sm text-muted-foreground">Loan Availability</div>
+          <div className="text-xl font-semibold">100% Loan</div>
+          <p className="text-xs text-muted-foreground mt-1">Financing options available with partners.</p>
         </div>
       </div>
     </div>

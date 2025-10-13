@@ -18,7 +18,7 @@ export function HeroCarousel() {
     return () => clearInterval(id)
   }, [])
   return (
-    <div className="relative w-full aspect-[16/9] bg-muted overflow-hidden rounded-lg">
+    <div className="relative w-full aspect-[16/6] bg-muted overflow-hidden rounded-lg">
       {slides.map((s, i) => (
         <div
           key={s.src}
@@ -28,7 +28,6 @@ export function HeroCarousel() {
           <Image src={s.src || "/placeholder.svg"} alt={s.alt} fill className="object-cover" priority={i === 0} />
         </div>
       ))}
-
       <div className="absolute inset-x-0 bottom-3 flex justify-center gap-2">
         {slides.map((_, i) => (
           <button
