@@ -18,7 +18,7 @@ export function HeroCarousel() {
     return () => clearInterval(id)
   }, [])
   return (
-    <div className="relative w-full aspect-[16/7] bg-muted overflow-hidden rounded-lg">
+    <div className="relative w-full aspect-[16/9] bg-muted overflow-hidden rounded-lg">
       {slides.map((s, i) => (
         <div
           key={s.src}
