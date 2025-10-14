@@ -32,7 +32,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="bg-[color:var(--brand-green-700)] text-white text-center text-sm py-3">
-        © Atul-G Solar 2025. All rights reserved.
+        Copyright © Atul sales and services 2025. All rights reserved.
       </div>
     </footer>
   )
