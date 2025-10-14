@@ -5,12 +5,10 @@ export function StatsStrip() {
         <div className="rounded-md border p-4 bg-white">
           <div className="text-sm text-muted-foreground">Government Subsidy</div>
           <div className="text-xl font-semibold">₹78,000 per kW</div>
-          <p className="text-xs text-muted-foreground mt-1">As communicated; subject to policy/eligibility.</p>
         </div>
         <div className="rounded-md border p-4 bg-white">
           <div className="text-sm text-muted-foreground">Loan Availability</div>
           <div className="text-xl font-semibold">100% Loan</div>
-          <p className="text-xs text-muted-foreground mt-1">Financing options available with partners.</p>
         </div>
       </div>
     </div>

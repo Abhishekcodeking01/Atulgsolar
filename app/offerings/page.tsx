@@ -10,34 +10,33 @@ export default function Page() {
           <h2 className="font-semibold">Renewable Solar Energy</h2>
           <p className="text-muted-foreground mt-1">Residential, commercial, and industrial installations.</p>
         </div>
+
         <div className="rounded-lg border p-5">
           <h2 className="font-semibold">Sourkrushi Pump</h2>
           <p className="text-muted-foreground mt-1">
             Uninterrupted daytime power for irrigation; reliable and bill-free operation.
           </p>
-          <div className="relative h-40 mt-3 rounded-md overflow-hidden">
-            <Image alt="Solar agriculture pumps" src="/images/pump-banner.jpg" fill className="object-cover" />
+          <div className="relative h-40 mt-3 rounded-md overflow-hidden bg-white border p-1">
+            <Image alt="Solar agriculture pumps" src="/images/pump-banner.jpg" fill className="object-contain" />
           </div>
         </div>
+
         <div className="rounded-lg border p-5">
-          <h2 className="font-semibold">Solar Loan Financing</h2>
-          <ul className="list-disc ml-5 mt-2 text-muted-foreground">
-            <li>80% loan available</li>
-            <li>₹18,000/kW subsidy</li>
-            <li>2kW system ≈ ₹2,000 monthly</li>
-            <li>Registered vendor, quality work, clean & safe energy</li>
-          </ul>
-          <div className="relative h-40 mt-3 rounded-md overflow-hidden">
-            <Image alt="Solar loan details" src="/images/loan-banner.jpg" fill className="object-cover" />
+          <h2 className="font-semibold">Off-Grid Inverters</h2>
+          <p className="text-muted-foreground mt-1">All range of off grid inverters.</p>
+          <div className="relative h-40 mt-3 rounded-md overflow-hidden bg-white border p-1">
+            <Image alt="Off grid inverters" src="/images/mppt-solar-pcu.jpg" fill className="object-contain" />
           </div>
         </div>
+
         <div className="rounded-lg border p-5">
-          <h2 className="font-semibold">Microtek Products</h2>
-          <p className="text-muted-foreground mt-1">Inverters, batteries, and panel options.</p>
-          <div className="relative h-40 mt-3 rounded-md overflow-hidden">
-            <Image alt="Microtek product lineup" src="/images/products-collage.png" fill className="object-cover" />
+          <h2 className="font-semibold">Environment-Friendly UPS</h2>
+          <p className="text-muted-foreground mt-1">The most environment friendly UPS.</p>
+          <div className="relative h-40 mt-3 rounded-md overflow-hidden bg-white border p-1">
+            <Image alt="Environment friendly UPS" src="/images/environment-ups.jpg" fill className="object-contain" />
           </div>
         </div>
+
         <div className="rounded-lg border p-5 md:col-span-2">
           <h2 className="font-semibold">Consultation & Installation</h2>
           <ul className="list-disc ml-5 mt-2 text-muted-foreground">

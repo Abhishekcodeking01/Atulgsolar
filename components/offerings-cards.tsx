@@ -2,9 +2,9 @@ import Image from "next/image"
 
 const offerings = [
   {
-    title: "Renewable Solar Solutions",
-    desc: "Residential, commercial, and industrial solar design and installation.",
-    img: "/images/slide-4.jpg",
+    title: "Off-Grid Inverters",
+    desc: "All range of off grid inverters",
+    img: "/images/mppt-solar-pcu.jpg",
   },
   {
     title: "Sourkrushi Pump",
@@ -12,14 +12,9 @@ const offerings = [
     img: "/images/pump-banner.jpg",
   },
   {
-    title: "Solar Loan & Subsidy",
-    desc: "80% loan available, ₹18,000/kW subsidy. 2kW system ≈ ₹2,000/month.",
-    img: "/images/loan-banner.jpg",
-  },
-  {
-    title: "Microtek Products",
-    desc: "Panels, batteries, and inverters from trusted brands.",
-    img: "/images/products-collage.png",
+    title: "Environment-Friendly UPS",
+    desc: "The most environment friendly UPS",
+    img: "/images/environment-ups.jpg",
   },
   {
     title: "Consultation & Installation",
@@ -35,8 +30,8 @@ export function OfferingsCards() {
       <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {offerings.map((o) => (
           <div key={o.title} className="rounded-lg border overflow-hidden bg-card">
-            <div className="relative h-40 w-full">
-              <Image src={o.img || "/placeholder.svg"} alt={o.title} fill className="object-cover" />
+            <div className="relative h-40 w-full bg-white">
+              <Image src={o.img || "/placeholder.svg"} alt={o.title} fill className="object-contain p-2" />
             </div>
             <div className="p-4">
               <h3 className="font-semibold">{o.title}</h3>

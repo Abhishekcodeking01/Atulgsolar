@@ -4,11 +4,10 @@ import Image from "next/image"
 import { useEffect, useState } from "react"
 
 const slides = [
-  { src: "/images/slide-1.jpg", alt: "Technician installing solar panels on roof" },
-  { src: "/images/slide-2.jpg", alt: "Atul Sales and Services subsidy announcement" },
-  { src: "/images/slide-3.jpg", alt: "About and mission infographic" },
-  { src: "/images/slide-4.jpg", alt: "Product showcase and contact details" },
-  { src: "/images/slide-5.png", alt: "Microtek inverters, batteries and panels lineup" },
+  { src: "/images/mppt-solar-pcu.jpg", alt: "Off-grid inverters - All range" },
+  { src: "/images/environment-ups.jpg", alt: "The most environment friendly UPS" },
+  { src: "/images/pump-banner.jpg", alt: "Sourkrushi Pump" },
+  { src: "/images/battery-banner.jpg", alt: "Stay Powered Up - ADC battery" },
 ]
 
 export function HeroCarousel() {
@@ -18,14 +17,14 @@ export function HeroCarousel() {
     return () => clearInterval(id)
   }, [])
   return (
-    <div className="relative w-full aspect-[16/6] bg-muted overflow-hidden rounded-lg">
+    <div className="relative w-full aspect-[16/5] bg-muted overflow-hidden rounded-lg p-2 md:p-3 border">
       {slides.map((s, i) => (
         <div
           key={s.src}
           className={`absolute inset-0 transition-opacity duration-700 ${i === index ? "opacity-100" : "opacity-0"}`}
           aria-hidden={i !== index}
         >
-          <Image src={s.src || "/placeholder.svg"} alt={s.alt} fill className="object-cover" priority={i === 0} />
+          <Image src={s.src || "/placeholder.svg"} alt={s.alt} fill className="object-contain" priority={i === 0} />
         </div>
       ))}
       <div className="absolute inset-x-0 bottom-3 flex justify-center gap-2">
