@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export function SiteFooter() {
   return (
     <footer className="border-t mt-12 bg-card">
@@ -31,8 +33,16 @@ export function SiteFooter() {
           <p className="text-sm">Shop no 6, Sriram Super Market, Rajapeth, Amravati, Maharashtra 444605</p>
         </div>
       </div>
+      <div className="mx-auto max-w-6xl px-4 py-4 border-t flex gap-6 justify-center text-sm">
+        <Link href="/terms" className="text-muted-foreground hover:text-foreground underline">
+          Terms and Conditions
+        </Link>
+        <Link href="/privacy" className="text-muted-foreground hover:text-foreground underline">
+          Privacy Policy
+        </Link>
+      </div>
       <div className="bg-[color:var(--brand-green-700)] text-white text-center text-sm py-3">
-        Copyright © Atul sales and services 2025. All rights reserved.
+        © Atul-G Solar 2025. All rights reserved.
       </div>
     </footer>
   )

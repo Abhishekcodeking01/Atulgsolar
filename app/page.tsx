@@ -4,6 +4,15 @@ import { StatsStrip } from "@/components/stats-strip"
 import { Testimonial } from "@/components/testimonial"
 
 export default function Page() {
+  const clientInstallations = [
+    { image: "/images/testimonials/installation-1.jpg", alt: "Solar installation in Amravati" },
+    { image: "/images/testimonials/installation-2.jpg", alt: "Microtek inverter installation" },
+    { image: "/images/testimonials/installation-3.jpg", alt: "Solar panels on rooftop" },
+    { image: "/images/testimonials/installation-4.jpg", alt: "Solar installation with client" },
+    { image: "/images/testimonials/installation-5.jpg", alt: "Solar panels installation" },
+    { image: "/images/testimonials/installation-6.jpg", alt: "Residential solar installation" },
+  ]
+
   return (
     <div>
       <section className="w-full">
@@ -59,6 +68,24 @@ export default function Page() {
       </section>
 
       <StatsStrip />
+
+      <section className="mx-auto max-w-6xl px-4 py-10">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-8">Our Work - Client Installations</h2>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {clientInstallations.map((installation, idx) => (
+            <div key={idx} className="rounded-lg border overflow-hidden bg-white hover:shadow-lg transition-shadow">
+              <div className="relative h-48 w-full bg-gray-100 p-2">
+                <Image
+                  src={installation.image || "/placeholder.svg"}
+                  alt={installation.alt}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       <section className="mx-auto max-w-6xl px-4 py-10">
         <h2 className="text-2xl md:text-3xl font-semibold">Updates & Announcements</h2>

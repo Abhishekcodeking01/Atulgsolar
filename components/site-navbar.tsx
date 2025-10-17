@@ -7,12 +7,10 @@ import { cn } from "@/lib/utils"
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About Us" },
   { href: "/offerings", label: "Offerings/Solutions" },
-  { href: "/updates", label: "Updates & Testimonials" },
+  { href: "/team-testimonials", label: "Team & Testimonials" },
+  { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact Us" },
-  { href: "/terms", label: "Terms" },
-  { href: "/privacy", label: "Privacy" },
 ]
 
 export function SiteNavbar() {
