@@ -30,7 +30,7 @@ export function SiteFooter() {
         </div>
         <div>
           <h4 className="font-semibold mb-2">Address</h4>
-          <p className="text-sm">Shop no 6, Sriram Super Market, Rajapeth, Amravati, Maharashtra 444605</p>
+          <p className="text-sm">Shop no 6, Sriram Super Market, Rajapeth, Amravati, Maharashtra 444606</p>
         </div>
       </div>
       <div className="mx-auto max-w-6xl px-4 py-4 border-t flex gap-6 justify-center text-sm">
