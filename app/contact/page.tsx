@@ -11,7 +11,7 @@ export default function Page() {
         <div className="rounded-lg border p-5">
           <h2 className="font-semibold">Find Us</h2>
           <p className="text-sm text-muted-foreground mt-1">
-            Shop no 6, Sriram Super Market, Rajapeth, Amravati, Maharashtra 444605
+            Shop no 6, Sriram Super Market, Rajapeth, Amravati, Maharashtra 444606
           </p>
           <div className="mt-4 overflow-hidden rounded-md">
             <iframe
